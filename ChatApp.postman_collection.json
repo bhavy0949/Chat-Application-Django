@@ -1,0 +1,680 @@
+{
+	"info": {
+		"_postman_id": "b14718c7-1c14-4663-af62-fcc510b90b23",
+		"name": "ChatApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"test3\",\n    \"email\":\"test3@test.test\",\n    \"password\":\"test@123\",\n    \"private_channel_name\": \"ha\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register User 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"test1\",\n    \"email\":\"test@test.test\",\n    \"password\":\"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "145"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Server",
+							"value": "daphne"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User Registered Successfully!\",\n    \"response_data\": {\n        \"username\": \"test1\",\n        \"email\": \"test@test.test\",\n        \"contact_number\": null,\n        \"birth_date\": null\n    }\n}"
+				},
+				{
+					"name": "Register User 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"test2\",\n    \"email\":\"test2@test.test\",\n    \"password\":\"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "145"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Server",
+							"value": "daphne"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User Registered Successfully!\",\n    \"response_data\": {\n        \"username\": \"test2\",\n        \"email\": \"test2@test.test\",\n        \"contact_number\": null,\n        \"birth_date\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"test1\",\n    \"password\":\"test@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login User1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"test1\",\n    \"password\":\"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Sep 2023 02:07:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "491"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=Hjh3Gg8Lez81075qZuOCHf6kVSoppZlD; expires=Mon, 23 Sep 2024 02:07:54 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionid=v4rmmzxgu6ez55w1lfnuhya3qcpg5g12; expires=Mon, 09 Oct 2023 02:07:54 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login successful.\",\n    \"data\": {\n        \"id\": 11,\n        \"last_login\": \"2023-09-25T02:07:54.867758Z\",\n        \"is_superuser\": false,\n        \"username\": \"test1\",\n        \"first_name\": \"\",\n        \"last_name\": \"\",\n        \"email\": \"test@test.test\",\n        \"is_staff\": false,\n        \"is_active\": true,\n        \"date_joined\": \"2023-09-25T01:33:40.644268Z\",\n        \"contact_number\": null,\n        \"birth_date\": null,\n        \"is_online\": true,\n        \"private_channel_name\": null,\n        \"last_activity\": null,\n        \"created_at\": \"2023-09-25T01:33:40.877707Z\",\n        \"updated_at\": \"2023-09-25T01:33:40.877721Z\",\n        \"groups\": [],\n        \"user_permissions\": []\n    }\n}"
+				},
+				{
+					"name": "Login User2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"test2\",\n    \"password\":\"test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Sep 2023 02:07:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "491"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "csrftoken=Hjh3Gg8Lez81075qZuOCHf6kVSoppZlD; expires=Mon, 23 Sep 2024 02:07:54 GMT; Max-Age=31449600; Path=/; SameSite=Lax"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionid=v4rmmzxgu6ez55w1lfnuhya3qcpg5g12; expires=Mon, 09 Oct 2023 02:07:54 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login successful.\",\n    \"data\": {\n        \"id\": 12,\n        \"last_login\": \"2023-09-25T02:36:03.728762Z\",\n        \"is_superuser\": false,\n        \"username\": \"test2\",\n        \"first_name\": \"\",\n        \"last_name\": \"\",\n        \"email\": \"test2@test.test\",\n        \"is_staff\": false,\n        \"is_active\": true,\n        \"date_joined\": \"2023-09-25T02:35:35.101477Z\",\n        \"contact_number\": null,\n        \"birth_date\": null,\n        \"is_online\": true,\n        \"private_channel_name\": null,\n        \"last_activity\": null,\n        \"created_at\": \"2023-09-25T02:35:35.337568Z\",\n        \"updated_at\": \"2023-09-25T02:35:35.337582Z\",\n        \"groups\": [],\n        \"user_permissions\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Sep 2023 02:07:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "sessionid=\"\"; expires=Thu, 01 Jan 1970 00:00:00 GMT; Max-Age=0; Path=/; SameSite=Lax"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Logout Successful\",\n    \"status\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Online Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/online-users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"online-users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Online Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/online-users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"online-users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Sep 2023 02:53:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Online users fetched successfully\",\n    \"data\": [\n        {\n            \"id\": 12,\n            \"username\": \"test2\",\n            \"email\": \"test2@test.test\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Recommended Friends",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/suggested-friends/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"suggested-friends",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/suggested-friends/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"suggested-friends",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 25 Sep 2023 03:18:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.8"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS, GET"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "843"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Found recommendations!!\",\n    \"Recommended users\": [\n        {\n            \"user\": {\n                \"id\": 819,\n                \"name\": \"User 819\",\n                \"age\": 32,\n                \"interests\": {\n                    \"music\": 17,\n                    \"photography\": 32,\n                    \"computers\": 33,\n                    \"cooking\": 31,\n                    \"singing\": 99,\n                    \"drawing\": 80\n                }\n            },\n            \"similarity\": 286\n        },\n        {\n            \"user\": {\n                \"id\": 283,\n                \"name\": \"User 283\",\n                \"age\": 49,\n                \"interests\": {\n                    \"music\": 94,\n                    \"computers\": 11,\n                    \"photography\": 99,\n                    \"singing\": 98,\n                    \"cars\": 61,\n                    \"cooking\": 25\n                }\n            },\n            \"similarity\": 253\n        },\n        {\n            \"user\": {\n                \"id\": 817,\n                \"name\": \"User 817\",\n                \"age\": 86,\n                \"interests\": {\n                    \"cars\": 49,\n                    \"movies\": 92,\n                    \"singing\": 94,\n                    \"cooking\": 36,\n                    \"music\": 23,\n                    \"drawing\": 15\n                }\n            },\n            \"similarity\": 209\n        },\n        {\n            \"user\": {\n                \"id\": 74,\n                \"name\": \"User 74\",\n                \"age\": 22,\n                \"interests\": {\n                    \"cooking\": 17,\n                    \"computers\": 46,\n                    \"movies\": 53,\n                    \"photography\": 21,\n                    \"dancing\": 51,\n                    \"singing\": 82\n                }\n            },\n            \"similarity\": 204\n        },\n        {\n            \"user\": {\n                \"id\": 274,\n                \"name\": \"User 274\",\n                \"age\": 75,\n                \"interests\": {\n                    \"music\": 56,\n                    \"drawing\": 85,\n                    \"photography\": 92,\n                    \"singing\": 96,\n                    \"dancing\": 65,\n                    \"cooking\": 12\n                }\n            },\n            \"similarity\": 204\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
